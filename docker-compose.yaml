@@ -1,0 +1,27 @@
+version: "3.8"
+services:
+    pg:
+        container_name: pg_container
+        image: postgres:14.1-alpine3.15
+        restart: always
+        environment:
+            POSTGRES_USER: postgres
+            POSTGRES_HOST_AUTH_METHOD: trust
+            PGUSER: postgres
+        ports:
+            - "5432:5432"
+        logging:
+          options:
+            max-size: 10m
+            max-file: "3"
+    pgadmin:
+        container_name: pgadmin_container
+        image: dpage/pgadmin4
+        environment:
+            PGADMIN_DEFAULT_EMAIL: krysm2015@gmail.com
+            PGADMIN_DEFAULT_PASSWORD: Phoenix2023
+        ports:
+            - "5050:80"
+      
+
+    
