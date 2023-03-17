@@ -16,6 +16,9 @@ VALUES  --Vodka
         ('Reyka' , 'liter' , 'Vodka' , 3.75, 'SGWS'),
         ('Wheatley' , 'liter' , 'Vodka' , 3, 'SGWS'),
         --Rum
+        ('Bacoo 5 Year','750', 'Rum',null, 'NW Beverage'),
+        ('Bacoo 8 Year','750', 'Rum', null, 'NW Beverage'),
+        ('Bacoo 12 Year','750', 'Rum',null, 'NW Beverage'),
         ('Jolly Roger' , 'liter' , 'Rum' , 2.75, 'NW Beverage'),
         ('Myers Dark' , 'liter' , 'Rum' , 3, 'RNDC' ),
         ('Zaya 16y' , 'liter' , 'Rum' , 3.75, 'RNDC' ),
@@ -37,6 +40,7 @@ VALUES  --Vodka
         ('Aviation' , 'liter' , 'Gin' , 3.50, 'SGWS' ),
         ('Beefeater' , 'liter' , 'Gin' , 2.75, 'SGWS' ),
         ('Big Gin' , 'liter' , 'Gin' , 2.75, 'SGWS' ),
+        ('Woodcut Barrel Gin', '750', 'Gin',null, 'NW Beverage'),
         --Tequila/Mezcal
         ('123 Diablito' , 'liter' , 'Tequila/Mezcal' , 16.75, 'NW Beverage' ),
         ('123 Dos Reposado' , 'liter' , 'Tequila/Mezcal' , 4.50, 'NW Beverage' ),
@@ -196,6 +200,7 @@ VALUES  --Vodka
         ('La Bella Prosecco' , '750' , 'Wine' , null, 'NW Beverage' ),
         ('Lange Pinot Noir' , '750' , 'Wine' , null, 'NW Beverage' ),
         ('Ruby Sky Cab' , '750' , 'Wine' , null, 'NW Beverage' ),
+        ('Ryan Patrick Reisling', '750', 'Wine', null, 'NW Beverage'),
         ('Ryan Patrick Red' , '750' , 'Wine' , null, 'NW Beverage' ),
         ('Vandori Pinot Grigio' , '750' , 'Wine' , null, 'NW Beverage' );
 
