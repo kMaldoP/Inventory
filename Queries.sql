@@ -1,5 +1,5 @@
 CREATE TABLE products(
-	id SERIAL ,
+	id SERIAL,
 	name TEXT NOT NULL UNIQUE,
     quantity INT,
 	size TEXT NOT NULL,
@@ -7,6 +7,7 @@ CREATE TABLE products(
 	halfcost MONEY,
 	distributor TEXT NOT NULL
 );
+
 
 
 
@@ -31,7 +32,7 @@ ORDER BY category, Halfcost ASC
 --Selecting Items by category and ascenging order ommitting null values
 SELECT name, category, halfcost FROM products
 WHERE halfcost IS NOT NULL
-ORDER BY category, Halfcost ASC
+ORDER BY category , Halfcost ASC
 --Display all records with halfcost null values by id,category,grouped by distributor
 SELECT id,name, distributor,category FROM PRODUCTS
 WHERE halfcost IS NULL
