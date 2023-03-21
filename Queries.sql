@@ -1,10 +1,9 @@
 CREATE TABLE products(
 	id SERIAL,
 	name TEXT NOT NULL UNIQUE,
-    quantity INT,
 	size TEXT NOT NULL,
 	category TEXT NOT NULL,
-	halfcost MONEY,
+	retailPrice MONEY,
 	distributor TEXT NOT NULL
 );
 
