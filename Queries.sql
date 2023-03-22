@@ -18,23 +18,24 @@ WHERE distributor = '' AND category = '';
 --Select name and quantity by distributor--
 SELECT name FROM products
 WHERE distributor = '';
---Selecting name, modprice and category in ascending order
-SELECT name, halfcost, category FROM products
-ORDER BY halfcost ASC;
---grouping total items by halfcost amount
-SELECT COUNT (halfcost)
+--Selecting name, RetailPrice and category in ascending order omitting null values
+SELECT name, RetailPrice, category FROM products
+WHERE retailPrice IS NOT NULL
+ORDER BY  category,RetailPrice ASC;
+--grouping total items by RetailPrice amount
+SELECT COUNT (RetailPrice)
 FROM products
-WHERE halfcost = MONEY('number here')
+WHERE RetailPrice = MONEY('number here')
 --Selecting Items by category in ascending order
-SELECT name, category, halfcost FROM products
-ORDER BY category, Halfcost ASC
+SELECT name, category, RetailPrice FROM products
+ORDER BY category, RetailPrice ASC
 --Selecting Items by category and ascenging order ommitting null values
-SELECT name, category, halfcost FROM products
-WHERE halfcost IS NOT NULL
-ORDER BY category , Halfcost ASC
---Display all records with halfcost null values by id,category,grouped by distributor
+SELECT name, category, RetailPrice FROM products
+WHERE RetailPrice IS NOT NULL
+ORDER BY category , RetailPrice ASC
+--Display all records with RetailPrice null values by id,category,grouped by distributor
 SELECT id,name, distributor,category FROM PRODUCTS
-WHERE halfcost IS NULL
+WHERE RetailPrice IS NULL
 ORDER BY category 
 
 DELETE FROM products:
